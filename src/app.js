@@ -17,5 +17,5 @@ app.use("/auth", require("./routes/auth"));
 app.get("/", (req, res) => {
     res.send("¡Servidor funcionando!");
 });
-
+app.use("/product-order", require("./routes/products"))
 module.exports=app
